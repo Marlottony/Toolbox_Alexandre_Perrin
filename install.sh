@@ -102,6 +102,6 @@ apt-get -f install
 
 echo "Installation Complete........"
 echo "Openining app...."
-xdg-open http://localhost/lab
+xdg-open http://localhost/toolbox
 
 
