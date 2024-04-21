@@ -5,7 +5,7 @@ Penetration Testing Toolkit
 A web interface to automate Scanning, Generating metasploit payload, Network Testing,Exploring CMS,Information Gathering,DNS Queries,IP Tools,Domain tools and much more
 
 
-Developed by Rakesh Pandey,rakeshpandey@karunya.edu.in
+Developed by Alexandre Perrin,alexandreperrin@supdevinci-edu.fr
 
 https://github.com/veerupandey/Penetration-Testing-Toolkit
 
@@ -15,7 +15,7 @@ Released under GPL see LICENSE for more information
 Installing    
 =======================
 
-    git clone https://github.com/veerupandey/Penetration-Testing-Toolkit.git
+    git clone https://github.com/Marlottony/Toolbox_Alexandre_Perrin
 
 Option 1(install.sh):
 ----------------------
@@ -70,7 +70,7 @@ nmap, mingw32,siege, metasploit(msf), nikto, whatweb, sslyze, wapiti, amap, xpro
 
 How To Use	
 =======================
-open http://yourip/lab in your web browser
+open http://localhost/toolbox in your web browser
 
 
 Features	
