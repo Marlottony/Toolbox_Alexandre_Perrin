@@ -7,7 +7,7 @@ A web interface to automate Scanning, Generating metasploit payload, Network Tes
 
 Developed by Alexandre Perrin,alexandreperrin@supdevinci-edu.fr
 
-https://github.com/veerupandey/Penetration-Testing-Toolkit
+https://github.com/Marlottony/Toolbox_Alexandre_Perrin
 
 Released under GPL see LICENSE for more information
 
