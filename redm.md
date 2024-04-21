@@ -11,7 +11,7 @@ https://github.com/Marlottony/Toolbox_Alexandre_Perrin
 
 Released under GPL see LICENSE for more information
 
-To install and configure the Penetration Toolbox on a Kali Linux system, here's a step-by-step guide based on the information you provided. Make sure to follow each step carefully to avoid installation or operational issues.
+To install and configure the Penetration Toolbox on a Kali Linux system. Make sure to follow each step carefully to avoid installation or operational issues.
 
 Prerequisites   
 =======================
