@@ -2,7 +2,7 @@ Penetration Testing Toolkit
 =======================
 
 
-A web interface to automate Scanning, Generating metasploit payload, Network Testing,Exploring CMS,Information Gathering,DNS Queries,IP Tools,Domain tools and much more
+A web interface to automate Scanning, Generating metasploit payload, Network Testing,Exploring CMS,Information Gathering,DNS Queries,IP Tools,Domain tools and much more.
 
 
 Developed by Alexandre Perrin,alexandreperrin@supdevinci-edu.fr
@@ -11,80 +11,78 @@ https://github.com/Marlottony/Toolbox_Alexandre_Perrin
 
 Released under GPL see LICENSE for more information
 
+To install and configure the Penetration Toolbox on a Kali Linux system. Make sure to follow each step carefully to avoid installation or operational issues.
 
-Installing    
+Prerequisites   
 =======================
 
-    git clone https://github.com/Marlottony/Toolbox_Alexandre_Perrin
-
-Option 1(install.sh):
-----------------------
-	cd Penetration-Testing-Toolkit-master
-	
-	chmod +x install.sh
-	
-	./install.sh .
-
-most of the dependencies will be installed but to use some modules(URL FUZZER and to Check if domain uses load balancing) you may  need to install 
-'lbd' and 'uniscan' manually.
-
-If you want you can add kali linux official repos (/etc/sources.list) in your Ubuntu (/etc/sources.list) just to install all the dependencies
-
-Option 2(Manually):
---------------------
-
-1.Unzip the downloaded zip file 
-
-2.Go to the the directory where you extracted your file
-
-   	cd Penetration-Testing-Toolkit-master
-	
-3.Add user 'www-data' into /etc/sudoers file
- 
-   	echo "www-data ALL=(ALL:ALL) NOPASSWD:ALL">>/etc/sudoers
-
-4a.Add the Backbox and Backtrack repositories if you are running Ubuntu
-
-4b.If you are running kali linux,You don't need to add any repositories,but if you want you can add backbox linux repos
-
-   Install automater in kali :
-
-	wget https://launchpad.net/~backbox/+archive/three/+files/automater_1.2.1-0backbox1_all.deb
-
-	dpkg -i automater_1.2.1-0backbox1_all.deb
-
-5.Install apache2 and php
-
-	apt-get install apache2 php5 libapache2-mod-php5
-
-6.Copy 'lab' folder to your web root (/var/www)
-	
-	cp -r lab /var/www
-
-7.Install the dependencies listed below by using apt-get or manually   
-    
-
-Dependencies
-=======================
-nmap, mingw32,siege, metasploit(msf), nikto, whatweb, sslyze, wapiti, amap, xprobe, dmitry, blindelephant, dnstracer, curl, lynx, mtr, fping, urlcrazy, automater, shellinabox, nbtscan,uniscan,lbd,weevely,amap
-
-How To Use	
-=======================
-open http://localhost/toolbox in your web browser
+1. **Open a terminal**: You will need access to a terminal on your Kali Linux.
+2. **Administrative privileges**: Ensure you have administrative rights to install packages and make required configuration changes.
 
 
-Features	
+Automated Installation with Script  
 =======================
 
-* Includes web interface for different tools for web scanning like nmap,uniscan,lbd,wapiti,nikto,whatweb,sslyze etc
-* Generates metasploit payload for almost all operating systems (windows,linux,Apple osx,Android)
-* Generate backdoors for debian packages,exe files and pdf
-* Includes web interface for theharvester
-* Google hacking
-* Collect various types of datas from a URL
-* Includes cms-explorer i.e..scan wordpress,joomla,drpal,blindelephant scan etc
-* Includes DNS-related tools,IP tools,ping test,link extractor and     checker,traceroute etc
-* Domain tools such as domain availability checker,page rank checker,domain age checker,alexa rank,whois lookup etc
-* Includes web interface for urlcrazy to generate and test domain typos
-* And much more.....
+1. **Clone the GitHub repository**:
+   ```bash
+   git clone https://github.com/Marlottony/Toolbox_Alexandre_Perrin
+   ```
+   
+2. **Navigate to the project directory**:
+   ```bash
+   cd Toolbox_Alexandre_Perrin
+   ```
+   
+3. **Make the installation script executable**:
+   ```bash
+   chmod +x install.sh
+   ```
+   
+4. **Run the installation script**:
+   ```bash
+   ./install.sh
+   ```
 
+This script should install most of the necessary dependencies. However, for specific features like "URL FUZZER" or to check if a domain is using load balancing, additional tools will need to be installed.
+
+
+Manual Installation of Specific Dependencies 
+=======================
+
+1. **Install `lbd` and `uniscan` if needed**:
+   ```bash
+   apt-get install lbd uniscan
+   ```
+
+2. **Add the `www-data` user to the sudoers file**:
+   ```bash
+   echo "www-data ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers
+   ```
+
+3. **Install Automater if needed**:
+   ```bash
+   wget https://launchpad.net/~backbox/+archive/three/+files/automater_1.2.1-0backbox1_all.deb
+   dpkg -i automater_1.2.1-0backbox1_all.deb
+   ```
+
+4. **Install Apache2 and PHP**:
+   ```bash
+   apt-get install apache2 php libapache2-mod-php
+   ```
+
+5. **Copy the `lab` directory to your web server's root**:
+   ```bash
+   cp -r lab /var/www/html/
+   ```
+
+6. **Restart the Apache service to apply changes**:
+   ```bash
+   systemctl restart apache2
+   ```
+
+Verification and Testing  
+=======================
+
+After installation, you should be able to access the Penetration Testing Toolkit's web interface via a browser by navigating to your local server address (e.g., `http://localhost/toolbox` or `http://server_ip_address/toolbox`). Make sure everything is working as expected by performing some basic tests from the interface.
+
+If you encounter issues during installation or use, check Apache's error logs and script output messages to diagnose and resolve problems.
