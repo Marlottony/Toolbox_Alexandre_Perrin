@@ -13,12 +13,15 @@ Released under GPL see LICENSE for more information
 
 To install and configure the Penetration Toolbox on a Kali Linux system, here's a step-by-step guide based on the information you provided. Make sure to follow each step carefully to avoid installation or operational issues.
 
-### Prerequisites
+Prerequisites   
+=======================
 
 1. **Open a terminal**: You will need access to a terminal on your Kali Linux.
 2. **Administrative privileges**: Ensure you have administrative rights to install packages and make required configuration changes.
 
-### Automated Installation with Script
+
+Automated Installation with Script  
+=======================
 
 1. **Clone the GitHub repository**:
    ```bash
@@ -42,7 +45,9 @@ To install and configure the Penetration Toolbox on a Kali Linux system, here's 
 
 This script should install most of the necessary dependencies. However, for specific features like "URL FUZZER" or to check if a domain is using load balancing, additional tools will need to be installed.
 
-### Manual Installation of Specific Dependencies
+
+Manual Installation of Specific Dependencies 
+=======================
 
 1. **Install `lbd` and `uniscan` if needed**:
    ```bash
@@ -75,7 +80,8 @@ This script should install most of the necessary dependencies. However, for spec
    systemctl restart apache2
    ```
 
-### Verification and Testing
+Verification and Testing  
+=======================
 
 After installation, you should be able to access the Penetration Testing Toolkit's web interface via a browser by navigating to your local server address (e.g., `http://localhost/lab` or `http://server_ip_address/lab`). Make sure everything is working as expected by performing some basic tests from the interface.
 
