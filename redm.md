@@ -2,7 +2,7 @@ Penetration Testing Toolkit
 =======================
 
 
-A web interface to automate Scanning, Generating metasploit payload, Network Testing,Exploring CMS,Information Gathering,DNS Queries,IP Tools,Domain tools and much more
+A web interface to automate Scanning, Generating metasploit payload, Network Testing,Exploring CMS,Information Gathering,DNS Queries,IP Tools,Domain tools and much more.
 
 
 Developed by Alexandre Perrin,alexandreperrin@supdevinci-edu.fr
