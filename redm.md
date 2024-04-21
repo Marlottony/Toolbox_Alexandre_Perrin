@@ -30,7 +30,7 @@ Automated Installation with Script
    
 2. **Navigate to the project directory**:
    ```bash
-   cd Penetration-Testing-Toolkit
+   cd Toolbox_Alexandre_Perrin
    ```
    
 3. **Make the installation script executable**:
@@ -67,7 +67,7 @@ Manual Installation of Specific Dependencies
 
 4. **Install Apache2 and PHP**:
    ```bash
-   apt-get install apache php libapache2-mod-php
+   apt-get install apache2 php libapache2-mod-php
    ```
 
 5. **Copy the `lab` directory to your web server's root**:
@@ -77,7 +77,7 @@ Manual Installation of Specific Dependencies
 
 6. **Restart the Apache service to apply changes**:
    ```bash
-   systemctl restart apache
+   systemctl restart apache2
    ```
 
 Verification and Testing  
