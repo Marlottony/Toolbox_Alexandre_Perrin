@@ -83,6 +83,6 @@ Manual Installation of Specific Dependencies
 Verification and Testing  
 =======================
 
-After installation, you should be able to access the Penetration Testing Toolkit's web interface via a browser by navigating to your local server address (e.g., `http://localhost/toolbox` or `http://server_ip_address/toolbox`). Make sure everything is working as expected by performing some basic tests from the interface.
+After installation, you should be able to access the Toolbox Penetration web interface via a browser by navigating to your local server address (e.g., `http://localhost/toolbox` or `http://server_ip_address/toolbox`). Make sure everything is working as expected by performing some basic tests from the interface.
 
 If you encounter issues during installation or use, check Apache's error logs and script output messages to diagnose and resolve problems.
