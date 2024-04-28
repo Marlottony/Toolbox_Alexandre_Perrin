@@ -72,7 +72,7 @@ Manual Installation of Specific Dependencies
 
 5. **Copy the `lab` directory to your web server's root**:
    ```bash
-   cp -r lab /var/www/html/
+   cp -r toolbox /var/www/html/
    ```
 
 6. **Restart the Apache service to apply changes**:
