@@ -157,13 +157,23 @@
                          
                 </ul>
 
-		
-                <h3>Execute System Commands</h3>
+				<h3>Execute System Commands</h3>
 <ul class="toggle">
-                           <?php $host=$_SERVER['SERVER_ADDR'];?>
-			<li class="icn_settings"><?php echo "<a href='https://$host:4200/' target='_blank'>";?>Terminal</a></li>
-		
-		</ul>
+    <?php
+    // Define a default host in case SERVER_ADDR is not set
+    $defaultHost = 'localhost'; // You can change this to a suitable default
+    $host = $_SERVER['SERVER_ADDR'] ?? $defaultHost;
+
+    // Ensure the host is a valid IP address or hostname
+    if (!filter_var($host, FILTER_VALIDATE_IP) && !filter_var($host, FILTER_VALIDATE_DOMAIN, FILTER_FLAG_HOSTNAME)) {
+        // If the host is neither a valid IP nor a valid hostname, use the default
+        $host = $defaultHost;
+    }
+
+    // Generate the hyperlink
+    echo "<li class='icn_settings'><a href='https://$host:4200/' target='_blank'>Terminal</a></li>";
+    ?>
+</ul>
            
 		<footer>
 			<hr />
