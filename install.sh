@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-#Copyright (C) 2014 Rakesh Pandey
-#Written by Rakesh Pandey <rakeshpandey@karunya.edu.in>.
+#Copyright (C) 2024 Alexandre Perrin
+#Written by Rakesh Pandey <alexandre.perrin@supdevinci-edu.fr>.
 #Installation script for ubuntu Linux
 
 # check if user is root
@@ -60,7 +60,7 @@ echo "www-data ALL=(ALL:ALL) NOPASSWD:ALL">>/etc/sudoers
 
 #Web Server
 echo "Installing Apache and PHP..............."
-apt-get install apache2 php5 libapache2-mod-php5
+apt-get install apache2 php libapache2-mod-php
 service apache2 restart 
 
 #Copying to web directory
