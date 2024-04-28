@@ -73,8 +73,8 @@ path='/var/www'
 fi
 
 echo copying files to $path
-cp -r ./lab $path
-chmod 777 -R $path/lab
+cp -r ./toolbox $path
+chmod 777 -R $path/toolbox
 
 
 
