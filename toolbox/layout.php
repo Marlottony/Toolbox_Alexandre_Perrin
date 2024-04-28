@@ -113,7 +113,7 @@
                 <ul class="toggle">
                     <li class="icn_settings"><a href="info.php">Information gathering</a></li>
 			<li class="icn_categories"><a href="harvester.php">TheHarvester</a></li>
-                        <li class="icn_security"><a href="google.php">Google Hacking</a></li>
+                        <li class="icn_security"><a href="google.php">Google dorking</a></li>
                         <li class="icn_categories"><a href="dmtool.php">Domain Tools</a></li>
                          
                 </ul>
@@ -150,7 +150,7 @@
                 <ul class="toggle">
                    
 			
-                        <li class="icn_security"><a href="http://map.honeynet.org/" target="_blank">Current world attack</a></li>
+                        <li class="icn_security"><a href="https://threatmap.opencti.net.br/" target="_blank">Current world attack</a></li>
                         <li class="icn_settings"><a href="http://ubuntuone.com/0phf469wTTJyly6VO2q14u" target="_blank">DDOS Javascript</a></li>
                         <li class="icn_jump_back"><a  href="https://suite.websecurify.com/" target="_blank">WebSecurify</a></li>
 		

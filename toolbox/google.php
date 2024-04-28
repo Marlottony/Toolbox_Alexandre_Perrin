@@ -28,7 +28,7 @@ require_once 'u.php';
 		<div class="clear"></div>
 		
 		<article class="module width_full">
-			<header><h3>Google Hacking</h3></header>
+			<header><h3>Google dorking</h3></header>
 				<div class="module_content">
                                     <script type="text/javascript">
                                     function do_google_search(type) 

@@ -16,6 +16,7 @@
 <?php
 require_once 'layout.php';
 require_once 'u.php';
+require_once 'loading.php';
 ?>
 <html>
     <body onLoad="init()"> 
