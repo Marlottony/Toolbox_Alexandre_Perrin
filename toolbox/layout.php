@@ -152,7 +152,7 @@
 			
                         <li class="icn_security"><a href="https://threatmap.opencti.net.br/" target="_blank">Current world attack</a></li>
                         <li class="icn_settings"><a href="https://snyk.io/blog/5-ways-to-prevent-code-injection-in-javascript-and-node-js/" target="_blank">DDOS Javascript</a></li>
-                        <li class="icn_jump_back"><a href="http://expyuzz4wqqyqhjn.onion" target="_blank">WebSecurify</a></li>
+                        <li class="icn_jump_back"><a href="https://sitecheck.sucuri.net/results/https" target="_blank">WebSecurify</a></li>
 		
                          
                 </ul>
