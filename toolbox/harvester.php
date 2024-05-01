@@ -124,23 +124,23 @@ require_once 'u.php';
                        
                        if(isset($c1)&&isset($c2)&&isset($c3)){
                            shell("");
-                          shell("python ./harvester/theHarvester.py -d $url -l $limit -v -n -t -b $c");
+                          shell("python ./harvester2/theHarvester.py -d $url -l $limit -v -n -t -b $c");
                            
                            
                    }elseif(isset ($c1)&&isset ($c2)){
                        shell("");
-shell("python ./harvester/theHarvester.py -d $url -l $limit -v -n  -b $c");
+shell("python ./harvester2/theHarvester.py -d $url -l $limit -v -n  -b $c");
                        
                        
                    }elseif (isset ($c1)&&isset ($c3)) {
                        shell("");
-shell("sudo python ./harvester/theHarvester.py -d $url -l $limit -v -t -b $c");
+shell("sudo python ./harvester2/theHarvester.py -d $url -l $limit -v -t -b $c");
                 
                        
                        
             }elseif (isset ($c2)&&isset ($c3)) {
                 shell("");
-shell("python ./harvester/theHarvester.py -d $url -l $limit -n -t -b $c");
+shell("python ./harvester2/theHarvester.py -d $url -l $limit -n -t -b $c");
                 
                 
             }
@@ -148,22 +148,22 @@ shell("python ./harvester/theHarvester.py -d $url -l $limit -n -t -b $c");
                        
    elseif (isset($c1)) {
        shell("");
-shell("python ./harvester/theHarvester.py -d $url -l $limit -v   -b $c");
+shell("python ./harvester2/theHarvester.py -d $url -l $limit -v   -b $c");
            }
             elseif (isset ($c2)) {
                 shell("");
-               shell("python ./harvester/theHarvester.py -d $url -l $limit -n   -b $c");
+               shell("python ./harvester2/theHarvester.py -d $url -l $limit -n   -b $c");
                 
                 
             } 
            
         elseif (isset ($c3)) {
             shell("");
- shell("python ./harvester/theHarvester.py -d $url -l $limit -t   -b $c");
+ shell("python ./harvester2/theHarvester.py -d $url -l $limit -t   -b $c");
             
             }  else {
                 shell("");
-                shell("python ./harvester/theHarvester.py -d $url -l $limit  -b $c");
+                shell("python ./harvester2/theHarvester.py -d $url -l $limit  -b $c");
                 
             }
                        
